@@ -1,0 +1,32 @@
+Jenkins repo 
+
+sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+
+echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+
+sudo apt update
+sudo apt install jenkins -y
+
+
+
+sudo systemctl start jenkins
+sudo systemctl enable Jenkins
+
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
+
+
+
+
+
+stop jenkins
+sudo service jenkins stop
+remove jenkins
+sudo apt-get remove --purge Jenkins
+sudo apt-get remove jenkins
+sudo apt-get remove --auto-remove jenkins
