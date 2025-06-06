@@ -1,0 +1,29 @@
+https://github.com/devops-ds/your-maven-project.git
+
+which mvn
+
+/usr/bin/mvn or /opt/maven/bin/mvn
+
+/usr/bin/mvn clean package
+
+
+command line for ansible if in git hub
+ansible-playbook -i hosts.ini deploy.yml
+
+
+command line for ansible if in git hub
+ansible-playbook -i /path/to/hosts.ini /path/to/deploy.yml
+
+
+post build actions
+target/*.jar
+
+verify artifact
+/var/lib/jenkins/deployment/ n file explorer
+ls -l /var/lib/jenkins/deployment/ in terminal
+
+
+
+
+
+
